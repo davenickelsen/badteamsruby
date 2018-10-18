@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+  </head>
+  <body>
+    <h2>Bad Teams League Standings</h2>
+    <table cellSpacing="0">
+      <thead>
+      <tr>
+        <th>Owner</th>
+        <th>Wins</th>
+        <th>Losses</th>
+        <th colspan="4">Teams</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% standings.each do |standing| %>
+        <tr class="standing">
+          <td><%= standing[:owner] %></td>
+          <td class="number"><%= standing[:wins] %></td>
+          <td class="number"><%= standing[:losses] %></td>
+          <% standing[:teams].each do |team| %>
+            <td>
+              <div class="logo">
+                <img src='<%="/images/#{team[:team]}.png" %>' />
+                <span><%="#{team[:wins]} - #{team[:losses]}"%></span>
+              </div>
+            </td>
+          <% end %>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </body>
+</html>
