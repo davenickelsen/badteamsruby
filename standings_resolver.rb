@@ -1,6 +1,5 @@
 require 'nokogiri'
 require 'fig_newton'
-require 'Date'
 require_relative 'file_checker'
 require_relative 'file_downloader'
 include FileHelperMethods
