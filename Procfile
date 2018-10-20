@@ -1,1 +1,1 @@
-web: ruby app.rb 80
+web: bundle exec rackup

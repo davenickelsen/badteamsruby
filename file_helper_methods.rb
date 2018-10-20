@@ -5,7 +5,7 @@ module FileHelperMethods
   end
 
   def clean_html
-    files_= Dir.glob("./html/*.html")
+    files = Dir.glob("./html/*.html")
     files.each do |file|
       File.delete(file)
     end
