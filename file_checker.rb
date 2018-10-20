@@ -1,4 +1,3 @@
-require 'Date'
 require_relative 'file_helper_methods'
 
 include FileHelperMethods
