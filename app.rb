@@ -2,7 +2,7 @@ require 'sinatra'
 require_relative 'html_resolver'
 require_relative 'standings_resolver'
 
-class App < Sinatra::Base
+class App < Sinatra::Application
   set :app_file, __FILE__
   set :public_folder, File.dirname(__FILE__)
 
