@@ -16,4 +16,4 @@ Sinatra::Base.get '/' do
   content
 end
 port = ARGV.length > 0 ? ARGV[0].to_i : 4567
-Sinatra::Base.start!({:bind => '0.0.0.0', :port => port})
+Sinatra::Base.start!({ :port => port})
