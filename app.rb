@@ -15,7 +15,5 @@ Sinatra::Base.get '/' do
   content = html_resolver.resolve(standings)
   content
 end
-
-port = 4567 if port.nil?
-
+port = ARGV.length > 0 ? ARGV[0].to_i : 4567
 Sinatra::Base.start!({:bind => '0.0.0.0', :port => port})
