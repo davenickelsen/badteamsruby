@@ -1,21 +1,21 @@
 GEM
-  remote: http://www.rubygems.org/
+  remote: http://rubygems.org/
   specs:
     fig_newton (1.0)
       yml_reader (>= 0.7)
-    mini_portile2 (2.3.0)
+    mini_portile2 (2.4.0)
     mustermann (1.0.3)
-    nokogiri (1.8.4-x64-mingw32)
-      mini_portile2 (~> 2.3.0)
-    rack (2.0.5)
-    rack-protection (2.0.3)
+    nokogiri (1.10.4-x64-mingw32)
+      mini_portile2 (~> 2.4.0)
+    rack (2.0.7)
+    rack-protection (2.0.7)
       rack
-    sinatra (2.0.3)
+    sinatra (2.0.7)
       mustermann (~> 1.0)
       rack (~> 2.0)
-      rack-protection (= 2.0.3)
+      rack-protection (= 2.0.7)
       tilt (~> 2.0)
-    tilt (2.0.8)
+    tilt (2.0.9)
     yml_reader (0.7)
 
 PLATFORMS
@@ -27,4 +27,4 @@ DEPENDENCIES
   sinatra
 
 BUNDLED WITH
-   1.16.3
+   2.0.1

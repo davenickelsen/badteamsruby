@@ -1,0 +1,29 @@
+owners:
+  - owner:
+      name: Dave
+      teams:
+        - CIN
+        - WAS
+        - JAX
+        - BUF
+  - owner:
+      name: Meat
+      teams:
+        - NYG
+        - TAM
+        - DET
+        - NYJ
+  - owner:
+      name: Steve
+      teams:
+        - ARI
+        - IND
+        - SFO
+        - CAR
+  - owner:
+      name: George
+      teams:
+        - MIA
+        - OAK
+        - DEN
+        - TEN

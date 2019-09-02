@@ -1,4 +1,4 @@
-source 'http://www.rubygems.org'
+source 'http://rubygems.org'
 
 gem 'sinatra'
 gem 'nokogiri'
