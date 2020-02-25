@@ -5,7 +5,9 @@ GEM
       yml_reader (>= 0.7)
     mini_portile2 (2.4.0)
     mustermann (1.0.3)
-    nokogiri (1.10.4-x64-mingw32)
+    nokogiri (1.10.8)
+      mini_portile2 (~> 2.4.0)
+    nokogiri (1.10.8-x64-mingw32)
       mini_portile2 (~> 2.4.0)
     rack (2.0.7)
     rack-protection (2.0.7)
@@ -19,6 +21,7 @@ GEM
     yml_reader (0.7)
 
 PLATFORMS
+  ruby
   x64-mingw32
 
 DEPENDENCIES
