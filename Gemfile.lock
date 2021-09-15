@@ -9,7 +9,7 @@ GEM
     nokogiri (1.11.4-x86_64-linux)
       racc (~> 1.4)
     racc (1.5.2)
-    rack (2.0.7)
+    rack (2.2.3)
     rack-protection (2.0.7)
       rack
     sinatra (2.0.7)
