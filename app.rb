@@ -18,3 +18,5 @@ class App < Sinatra::Application
   end
 
 end
+
+App.start!
