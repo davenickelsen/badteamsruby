@@ -14,6 +14,7 @@ class StandingsResolver
 
   def resolve
     nfl_standings = resolve_nfl_standings
+    puts nfl_standings
     FigNewton.load "#{@year}.yml"
     standings = FigNewton.owners.map do |owner_info|
       selected_teams = owner_info["owner"]["teams"].map do |team|
@@ -28,7 +29,7 @@ class StandingsResolver
       owner_totals[:teams] = selected_teams.sort{|a, b| a[:wins] <=> b[:wins]}
       owner_totals
     end
-    standings.sort!{|a,b| a[:wins] <=> b[:wins]}
+    standings.sort!{|a,b| b[:losses] <=> a[:losses]}
     standings
   end
 
