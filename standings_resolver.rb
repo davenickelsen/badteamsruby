@@ -29,7 +29,7 @@ class StandingsResolver
       owner_totals[:teams] = selected_teams.sort{|a, b| a[:wins] <=> b[:wins]}
       owner_totals
     end
-    standings.sort!{|a,b| b[:losses] <=> a[:losses]}
+    standings.sort!{|a,b| [a[:wins], b[:losses]] <=> [a[:wins], b[:losses]]}
     standings
   end
 
