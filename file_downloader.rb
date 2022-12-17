@@ -9,7 +9,6 @@ class FileDownloader
     afc = self.parse_section(file_data, /\<div.*id=\"div_AFC\">/)
     nfc = self.parse_section(file_data, /\<div.*id=\"div_NFC\">/)
     file = File.open(current_file_path, 'w')
-    file.puts(file_data)
     file.puts(afc)
     file.puts(nfc)
     file.close
