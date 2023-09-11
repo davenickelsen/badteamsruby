@@ -20,7 +20,6 @@ class StandingsResolver
         nfl_standings.find {|s| s[:team] == team}
       end
       owner_totals = selected_teams.reduce({:owner => owner_info["owner"]["name"], :wins => 0, :losses => 0, :ties => 0, :games => 0}) do |memo, team|
-        puts team.inspect
         memo[:wins] += team[:wins].to_i
         memo[:losses] += team[:losses].to_i
         memo[:ties] += team[:ties].to_i
@@ -33,7 +32,6 @@ class StandingsResolver
         owner_totals[:losses] += 0.5 * owner_totals[:ties]
       end
       owner_totals[:pct] = owner_totals[:wins].to_f / owner_totals[:games].to_f
-      puts owner_totals[:pct].to_s + " => " + owner_totals[:owner]
       owner_totals[:wins]
       owner_totals
     end
