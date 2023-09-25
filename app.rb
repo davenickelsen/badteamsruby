@@ -4,7 +4,7 @@ require_relative 'standings_resolver'
 
 class App < Sinatra::Application
   set :app_file, __FILE__
-  set :public_folder, File.dirname(__FILE__)
+  set :public_folder, 'public'
 
   get '/' do
     today = Date.today
