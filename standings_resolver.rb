@@ -42,13 +42,7 @@ class StandingsResolver
   private
 
   def resolve_nfl_standings
-    if !FileChecker.has_latest_standings?
-      clean_html
-      FileDownloader.get_current_nfl_standings_html
-    end
-    file = File.open(current_file_path)
-    data = file.read
-    file.close
+    data = FileDownloader.get_current_nfl_standings_html
     document = Nokogiri::HTML(data)
     afc_rows = document.css("#AFC tr")
     nfc_rows = document.css("#NFC tr")
