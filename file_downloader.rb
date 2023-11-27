@@ -8,10 +8,7 @@ class FileDownloader
     file_data = URI.open("https://www.pro-football-reference.com/").read
     afc = self.parse_section(file_data, /\<div.*id=\"div_AFC\">/)
     nfc = self.parse_section(file_data, /\<div.*id=\"div_NFC\">/)
-    file = File.open(current_file_path, 'w')
-    file.puts(afc)
-    file.puts(nfc)
-    file.close
+    afc + nfc
   end
 
   def self.parse_section(file_data, start_regex)
