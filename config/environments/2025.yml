@@ -1,0 +1,29 @@
+owners:
+  - owner:
+      name: Dave
+      teams:
+        - NOR
+        - IND
+        - MIA
+        - CIN
+  - owner:
+      name: Meat
+      teams:
+        - TEN
+        - CAR
+        - CHI
+        - NWE
+  - owner:
+      name: Steve
+      teams:
+        - NYG
+        - LVR
+        - SEA
+        - JAX
+  - owner:
+      name: George
+      teams:
+        - CLE
+        - NYJ
+        - DAL
+        - ATL
