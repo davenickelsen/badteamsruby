@@ -2,28 +2,28 @@ owners:
   - owner:
       name: Dave
       teams:
-        - NOR
-        - IND
         - MIA
+        - NYG
+        - ATL
         - CIN
   - owner:
-      name: Meat
+      name: Zombie Meat
       teams:
-        - TEN
+        - ARI
         - CAR
-        - CHI
-        - NWE
+        - WAS
+        - JAX
   - owner:
       name: Steve
       teams:
-        - NYG
-        - LVR
-        - SEA
-        - JAX
+        - NYJ
+        - TEN
+        - MIN
+        - PIT
   - owner:
       name: George
       teams:
         - CLE
-        - NYJ
-        - DAL
-        - ATL
+        - LVR
+        - NOR
+        - IND
