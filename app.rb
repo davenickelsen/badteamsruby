@@ -5,6 +5,14 @@ require_relative 'standings_resolver'
 class App < Sinatra::Application
   set :app_file, __FILE__
   set :public_folder, 'public'
+    set :host_authorization, permitted_hosts: [
+    "fridgefootball.com",
+    "www.fridgefootball.com",
+    "badteams.fridgefootball.com",
+    "localhost",
+    "127.0.0.1",
+    "[::1]"
+]
 
   get '/' do
     today = Date.today
