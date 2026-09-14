@@ -23,7 +23,7 @@ class StandingsResolver
         memo[:wins] += team[:wins].to_i
         memo[:losses] += team[:losses].to_i
         memo[:ties] += team[:ties].to_i
-        memo[:games] += memo[:wins].to_i + memo[:losses].to_i + memo[:ties].to_i
+        memo[:games] += team[:wins].to_i + team[:losses].to_i + team[:ties].to_i
         memo
       end
       owner_totals[:teams] = selected_teams.sort{|a, b| a[:wins] <=> b[:wins]}
